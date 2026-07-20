@@ -3,6 +3,8 @@
 ![GitHub](https://img.shields.io/github/license/erosguo/eye-vision-protection)
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/erosguo/eye-vision-protection)
 
+**[English](README.md)** | **[中文](README.zh-CN.md)**
+
 A cross-platform eye protection application built with Electron. It continuously monitors screen usage and reminds users to take breaks when the set time is reached.
 
 ## Features
@@ -114,3 +116,48 @@ Default settings (can be modified in the settings window):
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## Language Support
+
+### Available Languages
+
+| Language | File | Status |
+|----------|------|--------|
+| English | `README.md` | ✅ Maintained |
+| 中文 (Chinese) | `README.zh-CN.md` | ✅ Maintained |
+
+### Adding a New Language
+
+Follow these steps to add a new language version:
+
+1. **Create a new README file** with the appropriate language code:
+   ```
+   README.xx-XX.md
+   ```
+   Where `xx-XX` follows the [ISO 639-1](https://en.wikipedia.org/wiki/ISO_639-1) language code and [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) country code.
+
+2. **Translate the content** from `README.md` to the target language.
+
+3. **Update the language switcher** at the top of all README files:
+   - Add your new language link to the language bar
+   - Format: `**[Language Name](README.xx-XX.md)**`
+
+4. **Update the Language Support table** in `README.md`:
+   - Add a new row for your language
+   - Mark status as `✅ Maintained` or `🔄 In Progress`
+
+### Language Code Examples
+
+| Language | Code | File Name |
+|----------|------|-----------|
+| English | en | `README.md` |
+| Chinese (Simplified) | zh-CN | `README.zh-CN.md` |
+| Chinese (Traditional) | zh-TW | `README.zh-TW.md` |
+| Japanese | ja | `README.ja.md` |
+| Korean | ko | `README.ko.md` |
+| Spanish | es | `README.es.md` |
+| French | fr | `README.fr.md` |
+| German | de | `README.de.md` |
+| Portuguese | pt | `README.pt.md` |

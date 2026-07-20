@@ -3,6 +3,8 @@
 ![GitHub](https://img.shields.io/github/license/erosguo/eye-vision-protection)
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/erosguo/eye-vision-protection)
 
+**[English](README.md)** | **[中文](README.zh-CN.md)**
+
 一款基于 Electron 构建的跨平台视力保护应用。持续检测用户屏幕操作时长，在达到设定时间后拦截屏幕并提醒用户休息。
 
 ## 功能特性
@@ -121,3 +123,46 @@ eye-vision-protection/
 ## 许可证
 
 本项目采用 MIT 许可证 - 详见 [LICENSE](LICENSE) 文件
+
+---
+
+## 语言支持
+
+### 可用语言
+
+| 语言 | 文件 | 状态 |
+|------|------|------|
+| English | `README.md` | ✅ 维护中 |
+| 中文 | `README.zh-CN.md` | ✅ 维护中 |
+
+### 添加新语言
+
+按照以下步骤添加新的语言版本：
+
+1. **创建新的 README 文件**，使用适当的语言代码：
+   ```
+   README.xx-XX.md
+   ```
+   其中 `xx-XX` 遵循 [ISO 639-1](https://en.wikipedia.org/wiki/ISO_639-1) 语言代码和 [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) 国家代码。
+
+2. **翻译内容**，将 `README.md` 的内容翻译为目标语言。
+
+3. **更新语言切换器**，在所有 README 文件顶部添加新语言链接：
+   - 格式：`**[语言名称](README.xx-XX.md)**`
+
+4. **更新语言支持表格**，在 `README.md` 的 Language Support 表格中添加新行：
+   - 标记状态为 `✅ Maintained`（维护中）或 `🔄 In Progress`（进行中）
+
+### 语言代码示例
+
+| 语言 | 代码 | 文件名 |
+|------|------|--------|
+| English | en | `README.md` |
+| 中文（简体） | zh-CN | `README.zh-CN.md` |
+| 中文（繁体） | zh-TW | `README.zh-TW.md` |
+| 日本語 | ja | `README.ja.md` |
+| 한국어 | ko | `README.ko.md` |
+| Español | es | `README.es.md` |
+| Français | fr | `README.fr.md` |
+| Deutsch | de | `README.de.md` |
+| Português | pt | `README.pt.md` |

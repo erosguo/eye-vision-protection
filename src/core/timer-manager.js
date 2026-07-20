@@ -136,6 +136,7 @@ class TimerManager {
       if (this._workRemaining <= 0) {
         this._workRemaining = 0
         this._stopTick()
+        this.startBreak()
         if (this._onWorkComplete) {
           this._onWorkComplete()
         }
