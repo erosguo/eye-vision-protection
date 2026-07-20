@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo "🔍 Pre-commit check..."
+
+if git diff --cached --name-only --diff-filter=ACM | grep -qE "\.(log|tmp|bak)$"; then
+  echo "❌ Error: Cannot commit log/tmp/bak files"
+  exit 1
+fi
+
+echo "✅ Pre-commit check passed"

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>休息一下</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="icon">👁️</div>
+    <h1>请休息一下</h1>
+    <p class="subtitle">让眼睛离开屏幕，放松一下吧</p>
+    <div class="timer" id="timer">5:00</div>
+    <div class="progress-bar">
+      <div class="progress-fill" id="progressFill"></div>
+    </div>
+    <p class="hint">休息倒计时</p>
+    <div class="actions">
+      <button class="btn btn-secondary" onclick="api.snoozeBreak(5)">5分钟后提醒</button>
+      <button class="btn btn-secondary" onclick="api.snoozeBreak(10)">10分钟后提醒</button>
+      <button class="btn btn-primary" onclick="api.skipBreak()">跳过本次休息</button>
+    </div>
+  </div>
+  <script src="renderer.js"></script>
+</body>
+</html>

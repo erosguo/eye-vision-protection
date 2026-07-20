@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>视力保护助手 - 设置</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>⚙️ 设置</h1>
+      <p class="desc">配置你的用眼休息计划</p>
+    </div>
+
+    <div class="form-group">
+      <label for="workInterval">工作间隔（分钟）</label>
+      <div class="input-row">
+        <input type="range" id="workInterval" min="5" max="120" step="5" value="25">
+        <span class="value-display" id="workIntervalValue">25</span>
+      </div>
+      <p class="help">达到此时间后触发休息提醒</p>
+    </div>
+
+    <div class="form-group">
+      <label for="restDuration">休息时长（分钟）</label>
+      <div class="input-row">
+        <input type="range" id="restDuration" min="1" max="30" step="1" value="5">
+        <span class="value-display" id="restDurationValue">5</span>
+      </div>
+      <p class="help">每次休息的持续时间</p>
+    </div>
+
+    <div class="form-group toggle-group">
+      <label>提示音</label>
+      <label class="switch">
+        <input type="checkbox" id="soundEnabled" checked>
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <div class="form-group toggle-group">
+      <label>开机自启</label>
+      <label class="switch">
+        <input type="checkbox" id="autoStart">
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <button id="saveBtn" class="btn-save">保存设置</button>
+    <p class="save-hint" id="saveHint"></p>
+  </div>
+  <script src="renderer.js"></script>
+</body>
+</html>
